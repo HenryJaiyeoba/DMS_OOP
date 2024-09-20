@@ -6,7 +6,9 @@ from storage.data_manager import DataManager
 from datetime import datetime
 from models.user import Student, Admin, Manager
 
+
 class DormitoryManagementSystem:
+    """Some docstring here."""
     def __init__(self, data_file_path):
         self.data_manager = DataManager(data_file_path)
         self.authenticator = Authenticator(self.data_manager)
